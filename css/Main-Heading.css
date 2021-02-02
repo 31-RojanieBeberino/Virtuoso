@@ -1,0 +1,58 @@
+.container1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.mainHeading{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    height: 20vh;
+    width: 80%;
+    font-family: 'Futura', sans-serif;
+    letter-spacing: 1px;
+}
+.mainHeading h1{
+    font-size:35px;
+    transition: .4s;
+    color: #1a2741;
+}
+.mainHeading hr{
+    border-top: solid 2px #1a2741;
+    transition: .4s;
+    width: 10%;
+    height: 0px;
+}
+.mainHeading .links{
+    text-align: right;
+    font-size: calc(15px + .2vw);
+}
+@media only screen and (max-width:786px){
+    .container1{
+        height: 70vh;
+    }
+    .mainHeading{
+        margin: 100px auto;
+        width: 80%;
+    }
+    .mainHeading .links{
+        text-align: right;
+    }
+    .mainHeading h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:550px){
+    .container1{
+        height: 70vh;
+    }
+    .mainHeading h1{
+        margin: 10px auto;
+        font-size: 23px;
+    }
+    .mainHeading {
+        margin-top: 20px ;
+        height: 20vh;
+    }
+    
+}
