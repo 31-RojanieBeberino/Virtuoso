@@ -3,19 +3,29 @@
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    background-image: url('../img/Main-Banner-Hotwater.png');
+    background-size: cover;
+    background-position: center;
+}
+.container1 img {
+    width: 100%;
+    height: 100%;
 }
 .mainHeading{
-    display: grid;
-    grid-template-columns:repeat(1, 1fr);
     height: 20vh;
-    width: 80%;
+    width: 70%;
     font-family: 'Futura', sans-serif;
     letter-spacing: 1px;
+}
+.mainHeading h2{
+    font-size:35px;
+    transition: .4s;
+    color: #1a2741;
 }
 .mainHeading h1{
     font-size:35px;
     transition: .4s;
-    color: #1a2741;
+    color: #0fcc5b;
 }
 .mainHeading hr{
     border-top: solid 2px #1a2741;
@@ -23,8 +33,20 @@
     width: 10%;
     height: 0px;
 }
+.btnMian {
+    background-color: #0fcc5b;
+    font-weight: 700;
+    font-size: 10px;
+    padding:5px 20px;
+    color:white;
+    border: none;
+    border-radius: 50px;
+    height: 45px;
+    margin-top: 50px;
+}
 .mainHeading .links{
-    text-align: right;
+    width: 70%;
+    text-align: left;
     font-size: calc(15px + .2vw);
 }
 @media only screen and (max-width:786px){
@@ -50,9 +72,12 @@
         margin: 10px auto;
         font-size: 23px;
     }
+    .btnMian {
+        margin-top: 40px;
+    }
     .mainHeading {
         margin-top: 20px ;
-        height: 20vh;
+        height: 35vh;
     }
     
 }
