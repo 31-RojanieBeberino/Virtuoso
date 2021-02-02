@@ -1,0 +1,118 @@
+@import "Main-Heading.css";
+@import "overView.css";
+@import "about.css";
+@import "footer.css";
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 11.5vh;
+    font-family: 'Futura', sans-serif;
+    background-color: #1a2741;
+    width: 100%;
+    color: white;
+    transition: .4s;
+}
+nav .nav-logo h1{
+    letter-spacing: 5px;
+}
+nav .nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: calc(15px + .2vw);
+    font-family: 'Futura', sans-serif;
+    transition: all .4s;
+}
+.nav-menu ul li {
+    padding:27px 20px;
+    transition: .4s;
+}
+nav .nav-menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .4s;
+}
+nav .nav-menu ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+.burger{
+    display: none;
+    align-items: center;
+}
+.l{
+    width: 23px;
+    height: 3px;
+    background-color: black;
+    margin: 4px;
+}
+.items i{
+    font-size: 40px;
+    padding: 10px;
+}
+.shrink{
+    height: 9vh;
+    background-color: #1a2741;
+    color: #0fcc5b;
+}
+@media only screen and (max-width:768px){
+    nav{
+        height: 11.5vh;
+    }
+    .nav-menu {
+        position: absolute;
+        display:flex;
+        top:11.5vh;
+        right: 0;
+        transition: .4s;
+        background-color: #1a2741;
+        width: 50%;
+        transform: translate(100%);
+        z-index: -99;
+    }
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        z-index: -99;
+    }
+    .nav-menu ul li{
+        margin: calc(5px + 1vw);
+    }
+    .burger{
+        display: block;
+    }
+    .shrink{
+        height: 7vh;
+        background-color: #1a2741;
+        color: #0fcc5b;
+    }
+}
+@media only screen and (max-width:360px){
+    nav{
+        height: 11.5vh;
+    }
+    .nav-menu{
+        width: 100%;
+    }
+    .shrink{
+        height: 8vh;
+        background-color: #1a2741;
+        color: #0fcc5b;
+    }
+}
+
+.fallow{
+    top:7vh;
+}
+.togg{
+    transform: translate(0%);
+}
