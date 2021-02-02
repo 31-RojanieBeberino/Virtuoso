@@ -1,30 +1,81 @@
 .overView{
-    background-color: whitesmoke;
-    height: 40vh;
+    height: 70vh;
     width: 100%;
     font-family: 'Futura', sans-serif;
     letter-spacing: .3px;
     transition: .4s;
     margin-bottom: 100px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
-.overView .overviewContent{
-    margin: auto;
-    width: 80%;
-}
-.overView div h1{
+.overviewContent h2{
+    font-size: 30px;
     color:#1a2741;
 }
+.overviewContent h1{
+    font-size: 50px;
+    color: #0fcc5b;
+}
+.overviewContent p {
+    padding:10px 0px; 
+    width: 90%;
+}
+.overviewVid iframe {
+    border: none;
+    width: 450px;
+    height: 280px;
+}
+.overviewContent{
+    margin-left: 90px;
+    width: 40%;
+}
+.overviewVid{
+    width:40%;
+}
 @media only screen and (max-width: 768px){
+    .overviewContent{
+        margin: 0px 40px;
+        width: 50%;
+    }
+    .overviewVid{
+        width:50%;
+    }
     .overView{
         width: 100%;
-        height: 25vh;
+        height: 45vh;
+    }
+    .overviewContent p {
+        padding:10px 0px; 
+        width: 90%;
+    }
+    .overviewVid iframe {
+        border: none;
+        width: 300px;
+        height: 250px;
     }
 }
 @media only screen and (max-width:508px){
     .overView{
-        height: 45vh;
-        margin-bottom: 10px;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .overviewContent{
+        margin: 50px 30px;
+        width:90%;
+    }
+    .overviewVid{
+        margin: 20px 30px;
+        width:90%;
+    }
+    .overviewContent p {
+        padding:10px 0px; 
+        width: 90%;
+    }
+    .overviewVid iframe {
+        border: none;
+        width: 300px;
+        height: 250px;
     }
 }

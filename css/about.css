@@ -1,62 +1,82 @@
 .about{
     width: 100%;
+    background-color: #1a2741;
 }
 .content2{
     margin: auto;
     width: 80%;
+    height: 50vh;
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     transition: .4s;
-    margin-bottom: 10vw;
+    background-image: url("../img/Rebate-BG.png");
+    background-size: cover;
+    background-position: center;
 }
-.content2 div{
+/* .content2 div{
     flex:1;
     height: 100%;
     margin: .5vw;
     width: 280px;
     color: #1a2741;
-}
+} */
 .contentElement img {
     height: 45.4vw;
     width: 80%;
     float: right;
 }
 .contentElement h1{
-    padding: .6vw 3.5vw;
+    font-size: 50px;
+    color: white;
+    padding: 5vw 4vw 0px;
     font-family: 'Futura' , sans-serif;
 }
-.contentElement p {
+.contentElement h2 {
     padding: .6vw 3.5vw;
-    color:black;
+    width: 60%;
+    font-size: 18px;
+    font-weight:700;
+    color:#1a2741;
     font-family: 'Futura', sans-serif;
     letter-spacing: .3px;
 }
+.btnLearmore{
+    font-weight: 700;
+    border: none;
+    font-size: 10px;
+    border-radius: 50px;
+    background-color:#1a2741;
+    height: 40px;
+    padding:10px 20px;
+    color:white;
+    margin: 20px 45px 30px;
+}
 @media only screen and (max-width:768px){
+    .content2{
+        margin: auto;
+        width: 80%;
+        height: 35vh;
+        right:70px;
+    }
     .content2 div img {
         height:calc( 45vw + 30vh);
         width: 100%;
     }
 }
-@media only screen and (max-width:368){
+@media only screen and (max-width:360){
+    .about{
+        height: 70vh;
+    }
     .content2{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        margin:auto;
+       height: 100vh;
     }
-    .content2 div{
-        width: 100%;
-        flex:0;
-        width: 0px;
-    }
-    .contentElement h1{
+    /* .contentElement h1{
         margin:15px 0px;
         width: 50vw;
     }
     .contentElement h1,p{
         padding: .6vw 3.5vw;
-    }
+    } */
 
 }
