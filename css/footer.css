@@ -88,25 +88,6 @@
     color: #1a2741;
     outline-style: none;
 }
-@media only screen and (max-width: 768px){
-    .footerBanner{
-        background-color: pink;
-    }
-    /* .footer{
-        height: 75vh;
-        background-color: #1a2741;
-    } */
-    /* .footerContent .footerBanner{
-        width: 50%;
-    }
-    .footerContent{
-        height: 60vh;
-        margin: auto;
-    }
-    .footerContent .footer-form h3{
-        width: 55vw;
-    } */
-}
 @media only screen and (max-width: 360px){
     .footer{
         height: 145vh;
@@ -125,6 +106,5 @@
     .footerContent div{
         width: 100%;
         display: block;
-        /* background-color: pink; */
     }
 }
