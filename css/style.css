@@ -36,6 +36,7 @@ nav .nav-menu ul {
     font-size: calc(15px + .2vw);
     font-family: 'Futura', sans-serif;
     transition: all .4s;
+    padding-right:10px;
 }
 .nav-menu ul li {
     padding:27px 20px;
@@ -65,13 +66,13 @@ nav .nav-menu ul li a:hover{
     padding: 10px;
 }
 .shrink{
-    height: 15vh;
+    height: 9vh;
     background-color: #1a2741;
     color: #0fcc5b;
 }
 @media only screen and (max-width:768px){
     nav{
-        height: 11.5vh;
+        height: 10vh;
     }
     .virtuosoLogo img {
         margin-left: 40px;
@@ -79,8 +80,6 @@ nav .nav-menu ul li a:hover{
     }
     .shrink{
         height: 7vh;
-        background-color: #1a2741;
-        color: #0fcc5b;
     }
 }
 @media only screen and (max-width:360px){
