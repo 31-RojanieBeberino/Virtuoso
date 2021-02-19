@@ -1,6 +1,6 @@
 .footer{
     width: 100%;
-    height: 65vh;
+    height: 70vh;
     background-color: #1a2741;
     display: flex;
     align-items: center;
@@ -9,31 +9,20 @@
 .footerContent {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 65vh;
     margin:0px auto;
 }
-/* .footerHeader{
-    width: 80%;
-} */
-/* .footerHead {
-    font-family: 'Futura', sans-serif;
-    text-align: left;
-    color: white;
-}
-.footerBody {
-    color:white;
-} */
 .footerContent div{
     height: 20vh;
     color: white;
     margin: 0px 10px 10px;
 }
-.footerContent .footer-brand{
+.footer-brand{
     width: 25%;
 }
-.footerContent .footer-brand h1{
+.footer-brand h1{
     font-family: 'Futura', sans-serif;
     letter-spacing: 3px;
 }
@@ -101,17 +90,14 @@
 }
 @media only screen and (max-width: 768px){
     .footerBanner{
-        margin-top: -10px;
-        background-color: #1a2741;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 25vh;
+        background-color: pink;
     }
-    .footer{
+    /* .footer{
         height: 75vh;
         background-color: #1a2741;
+    } */
+    /* .footerContent .footerBanner{
+        width: 50%;
     }
     .footerContent{
         height: 60vh;
@@ -119,26 +105,26 @@
     }
     .footerContent .footer-form h3{
         width: 55vw;
-    }
+    } */
 }
 @media only screen and (max-width: 360px){
-    .footer-brand{
-        width: 100%;
-    }
-    /* .footerContent div{
-        height: 20vh;
-        color: white;
-        width:100%;
-    } */
     .footer{
-        height: 150vh;
-        background-color: #1a2741;
+        height: 145vh;
+        background-color:#1a2741;
     }
-    .footerContent{
-        height: 150vh;
+    .footerContent .footer-brand{
         width: 100%;
     }
-    .footerContent .footer-form h3{
-        width: 55vw;
+    .footerContent {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px 20px;
+        height: 130vh;
+    }
+    .footerContent div{
+        width: 100%;
+        display: block;
+        /* background-color: pink; */
     }
 }

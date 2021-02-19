@@ -78,9 +78,9 @@
         <div class="footerContent">
             <div class="footer-brand">
                 <h1>Vertuoso</h1>
-                    <h1 class="footerHead">Our passion </h1>
+                    <h1>Our passion </h1>
                     <br>
-                    <p class="footerBody">Our passion is to help Australians become more energy independent. After a tumultuous 10 years of
+                    <p>Our passion is to help Australians become more energy independent. After a tumultuous 10 years of
                     constant power company price increases, black-outs and coal-fired power plant failures, we’re
                     seeing more Australians searching for a better solution
                     </p>
